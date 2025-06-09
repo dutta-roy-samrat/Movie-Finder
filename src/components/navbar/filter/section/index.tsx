@@ -100,10 +100,13 @@ const FilterSection = () => {
 
   useEffect(() => {
     const fetchGenres = async () => {
-      const response = await fetch(getGenres());
-      const data = await response.json();
-      setGenres(data.genres);
-      setIsLoadingGenres(false);
+      try {
+        const response = await fetch(getGenres());
+        const data = await response.json();
+        setGenres(data.genres);
+      } finally {
+        setIsLoadingGenres(false);
+      }
     };
     setIsLoadingGenres(true);
     fetchGenres();
