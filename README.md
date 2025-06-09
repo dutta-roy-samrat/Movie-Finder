@@ -91,3 +91,13 @@ Start the development server:
 ```sh
 npm run dev
 ```
+> **⚠️ Note:** The API currently requires DNS routing through `1.1.1.1` (Cloudflare DNS) to function properly.  
+> If you're testing this on a real mobile device or any network where `1.1.1.1` is restricted or overridden, you may not see API responses (e.g., genres list may be empty).
+
+### ✅ To ensure the API works as expected:
+- Set your device or system DNS to `1.1.1.1` (Cloudflare) or `8.8.8.8` (Google).
+- Alternatively, test using **Chrome DevTools mobile simulator** or a **desktop browser**.
+
+---
+
+⚙️ *In production, this should be resolved by hosting the API on a publicly accessible domain.*
