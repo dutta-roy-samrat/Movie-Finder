@@ -32,15 +32,9 @@
 
 ## 📖 Overview
 
-**Movie-Finder** is a powerful developer tool designed to simplify the creation of movie-related web applications using **Next.js**.
-
-### Why Movie-Finder?
-
-This project empowers developers to build engaging movie databases effortlessly.  
-Core features include:
-
-- 🎨 **Dynamic Movie Data Management**:  
-  Centralized context for managing movie data enhances state management and reactivity.
+**Movie-Finder** is made for finding movies.
+ 
+### Core features include:
 
 - 🚀 **Responsive UI with Tailwind CSS**:  
   Utilizes Tailwind CSS for a consistent and modern design, streamlining the styling process.
@@ -49,7 +43,7 @@ Core features include:
   Fetches data from [TMDb API](https://www.themoviedb.org/documentation/api), providing real-time movie information.
 
 - ⭐ **User Engagement Features**:  
-  Allows users to mark favorites and filter movies, enhancing interactivity and personalization.
+  Allows users to search movies, mark favorites and filter movies, enhancing interactivity and personalization.
 
 - ⚡ **Optimized Performance**:  
   Implements debouncing and loading indicators to improve user experience during data fetching.
