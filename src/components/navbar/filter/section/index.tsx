@@ -124,6 +124,7 @@ const FilterSection = () => {
             onChange={handleInputChange}
             className={styles.inputClass}
             id="genre"
+            name="genre"
           >
             <option value="">All</option>
             {genres.map((genre) => (
