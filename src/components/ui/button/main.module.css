@@ -1,0 +1,7 @@
+.defaultBtnClass {
+  @apply bg-gray-500 text-white p-2 rounded-md hover:bg-gray-600;
+}
+
+.dangerBtnClass {
+  @apply bg-red-500 text-white p-2 rounded-md hover:bg-red-600;
+}

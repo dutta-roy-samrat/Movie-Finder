@@ -1,0 +1,11 @@
+.navContainer {
+  @apply flex flex-col sticky top-0 z-50 w-full;
+}
+
+.navContent {
+  @apply flex flex-col md:flex-row justify-between items-center p-4 bg-gray-800 text-white px-16 gap-4;
+}
+
+.navLogoLink {
+  @apply text-2xl font-bold;
+}

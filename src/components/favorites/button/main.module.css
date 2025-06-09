@@ -1,0 +1,3 @@
+.favoriteButton {
+  @apply bg-slate-300 text-white p-2 rounded-md hover:bg-slate-700;
+}

@@ -1,0 +1,7 @@
+.spinnerClassName {
+  @apply border-black w-14 h-14;
+}
+
+.pageContainer {
+  @apply flex justify-center items-center h-screen;
+}

@@ -1,0 +1,3 @@
+.spinnerClassName {
+  @apply w-4 h-4 animate-spin rounded-full border-2;
+}

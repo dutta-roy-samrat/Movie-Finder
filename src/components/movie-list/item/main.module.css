@@ -1,0 +1,27 @@
+.movieItemContainer {
+  @apply relative bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer text-white;
+}
+
+.imgClass {
+  @apply w-full h-auto rounded-md mb-2;
+}
+
+.favoriteBtn {
+  @apply absolute top-2 right-2 z-10;
+}
+
+.movieDetailsContainer {
+  @apply p-4;
+}
+
+.movieTitle {
+  @apply text-lg font-semibold;
+}
+
+.movieDeatil {
+  @apply text-sm;
+}
+
+.movieReleaseDate {
+  @apply movieDeatil mt-2;
+}
