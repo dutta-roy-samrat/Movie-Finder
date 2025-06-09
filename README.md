@@ -99,5 +99,3 @@ npm run dev
 - Alternatively, test using **Chrome DevTools mobile simulator** or a **desktop browser**.
 
 ---
-
-⚙️ *In production, this should be resolved by hosting the API on a publicly accessible domain.*
