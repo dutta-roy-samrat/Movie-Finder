@@ -27,6 +27,7 @@ const FilterSection = () => {
   const { setMoviesData } = useMovieListContext();
   const [genres, setGenres] =
     useState<MoviesDataType["results"][number]["genres"]>(defaultArr);
+  const [isLoadingGenres, setIsLoadingGenres] = useState(false);
 
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
 
@@ -110,7 +111,11 @@ const FilterSection = () => {
     <section className={styles.filterSectionContainer}>
       <div className={styles.filterSectionHeaderContainer}>
         <header className={styles.filterSectionHeader}>Filters</header>
-        <Button onClick={handleClearFilters} aria-label="Clear Filters">
+        <Button
+          onClick={handleClearFilters}
+          aria-label="Clear Filters"
+          className={styles.clearFiltersButton}
+        >
           Clear Filters
         </Button>
       </div>
@@ -127,11 +132,15 @@ const FilterSection = () => {
             name="genre"
           >
             <option value="">All</option>
-            {genres.map((genre) => (
-              <option key={genre.id} value={genre.id}>
-                {genre.name}
-              </option>
-            ))}
+            {isLoadingGenres ? (
+              <option value="">Loading...</option>
+            ) : (
+              genres.map((genre) => (
+                <option key={genre.id} value={genre.id}>
+                  {genre.name}
+                </option>
+              ))
+            )}
           </select>
         </div>
         <div className={styles.filterSectionFieldContainer}>

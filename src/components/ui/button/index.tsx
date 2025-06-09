@@ -4,7 +4,7 @@ import { cn } from "@/utils/classname";
 
 import styles from "./main.module.css";
 
-type ButtonVariant = "default"|"danger";
+type ButtonVariant = "default" | "danger";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
@@ -15,16 +15,16 @@ const classNameMapping: Record<ButtonVariant, string> = {
   danger: styles.dangerBtnClass,
 };
 
-const Button = (props: ButtonProps) => {
+const Button = ({ className = "",children, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
       className={cn(
         classNameMapping[props.variant || "default"],
-        props.className
+        className
       )}
     >
-      {props.children}
+      {children}
     </button>
   );
 };

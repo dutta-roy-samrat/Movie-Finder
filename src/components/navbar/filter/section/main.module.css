@@ -29,3 +29,7 @@
 .inputClass {
   @apply p-4 rounded-md w-full md:w-auto text-black;
 }
+
+.clearFiltersButton {
+  @apply hover:!bg-gray-800;
+}
