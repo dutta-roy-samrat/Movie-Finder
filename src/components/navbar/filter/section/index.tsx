@@ -104,8 +104,10 @@ const FilterSection = () => {
         const response = await fetch(getGenres());
         const data = await response.json();
         setGenres(data.genres);
-      } finally {
         setIsLoadingGenres(false);
+      } catch (error) {
+        setIsLoadingGenres(false);
+        console.error(error);
       }
     };
     setIsLoadingGenres(true);
