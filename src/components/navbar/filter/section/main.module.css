@@ -27,5 +27,5 @@
 }
 
 .inputClass {
-  @apply p-4 rounded-md w-full md:w-auto;
+  @apply p-4 rounded-md w-full md:w-auto text-black;
 }

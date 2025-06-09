@@ -116,11 +116,10 @@ const FilterSection = () => {
       </div>
       <form onSubmit={handleSubmit} className={styles.filterSectionForm}>
         <div className={styles.filterSectionFieldContainer}>
-          <label htmlFor="genre" className={styles.labelClass} id="genre">
+          <label htmlFor="genre" className={styles.labelClass}>
             Genre
           </label>
           <select
-            name="genre"
             value={filters.genre}
             onChange={handleInputChange}
             className={styles.inputClass}
